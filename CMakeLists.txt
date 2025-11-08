@@ -10,9 +10,9 @@ find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
 add_executable(8-Ball-Pool
     src/main.cpp
-    src/mainwindow.cpp
-    src/mainwindow.h
-    src/mainwindow.ui)
+    src/gamewidget.cpp
+    src/gamewidget.h
+    )
 target_link_libraries(8-Ball-Pool PRIVATE fmt::fmt)
 target_link_libraries(8-Ball-Pool PRIVATE Qt6::Widgets)
 

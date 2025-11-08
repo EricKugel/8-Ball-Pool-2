@@ -1,9 +1,10 @@
-#include "mainwindow.h"
 #include <QApplication>
+#include "gamewidget.h"
 
-int main (int argc, char** argv) {
+int main(int argc, char **argv) {
     QApplication app(argc, argv);
-    MainWindow w;
-    w.show();
+    GameWidget game;
+    game.resize(800, 600);
+    game.show();
     return app.exec();
 }
